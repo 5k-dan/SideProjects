@@ -8,6 +8,8 @@ def on_yes_click():
     # Remove the "Yes" and "No" buttons
     yes_button.destroy()
     no_button.destroy()
+    text_box.destroy()
+
 
 def on_no_click():
     move_no_button()
