@@ -14,15 +14,15 @@ pygame.display.set_caption("Kung Fu Fighter")
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
-GREEN = (0, 255, 0)
+GREEN = (248, 131, 121)
 
 # Load player character image
-player_image = pygame.image.load("player_character.png").convert_alpha()
+player_image = pygame.image.load("nicki.png").convert_alpha()
 player_rect = player_image.get_rect()
 player_rect.center = (WIDTH // 4, HEIGHT // 2)
 
 # Load opponent character image
-opponent_image = pygame.image.load("opponent_character.png").convert_alpha()
+opponent_image = pygame.image.load("megan.png").convert_alpha()
 opponent_rect = opponent_image.get_rect()
 opponent_rect.center = (3 * WIDTH // 4, HEIGHT // 2)
 
@@ -102,7 +102,7 @@ while True:
             fireball_rect.center = (0, 0)  # Reset fireball position
             if opponent_health <= 0:
                 # Opponent defeated
-                text = font.render("Duke WINS!!", True, GREEN)
+                text = font.render("Big foot but you still a small fry ayyy ", True, GREEN)
                 screen.blit(text, (WIDTH // 2 - 100, HEIGHT // 2))
                 pygame.display.update()
                 pygame.time.delay(2000)  # Display message for 2 seconds
