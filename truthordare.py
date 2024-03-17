@@ -11,15 +11,15 @@ while True:
              "No phone for an hour",
              "GET A JOB"]
 
-    Prompt =(input("Truth or Dare? ")).split()
+    Prompt = (input("Truth or Dare?"))
 
     if Prompt == "Truth":
-        print(Truths)
+        print(random.choice(Truths))
 
-    if Prompt == "Dare":
-        print(Dares)
+    elif Prompt == "Dare":
+        print(random.choice(Dares))
 
 
-    if Prompt != "Truth" or "Dare":
+    else:
         print("Not in correct format!")
         continue
